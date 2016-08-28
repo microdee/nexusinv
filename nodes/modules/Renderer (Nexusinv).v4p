@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.104.dtd" >
-   <PATCH nodename="C:\vvvv\libs\md.ecosystem\packs\nexusinv\nodes\modules\Renderer (Nexusinv).v4p" systemname="Renderer (Nexusinv)" filename="C:\vvvv\libs\md.ecosystem\packs\nexusinv\nodes\modules\Renderer (Nexusinv).v4p" scrollx="0" scrolly="2790">
+   <PATCH nodename="C:\vvvv\app\vvvv_50alpha34.104_x64\packs\nexusinv\nodes\modules\Renderer (Nexusinv).v4p" systemname="Renderer (Nexusinv)" filename="C:\vvvv\libs\md.ecosystem\packs\nexusinv\nodes\modules\Renderer (Nexusinv).v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="1170" top="4650" width="11490" height="9975">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
@@ -81,13 +81,15 @@
    </PIN>
    <PIN pinname="Result" visible="1">
    </PIN>
+   <PIN pinname="Popup" visible="1">
+   </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="4" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="2145" top="2595" width="1665" height="240">
+   <BOUNDS type="Box" left="1845" top="2745" width="1830" height="240">
    </BOUNDS>
-   <BOUNDS type="Node" left="2145" top="2595" width="0" height="0">
+   <BOUNDS type="Node" left="1845" top="2745" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="http://localhost">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="http://localhost:23456">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="http://vvvv.org">
    </PIN>
@@ -222,7 +224,11 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="|Scroll ToXY|">
    </PIN>
    </NODE>
-   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Scroll ToXY">
+   <LINK srcnodeid="11" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Scroll ToXY" linkstyle="VHV">
+   <LINKPOINT x="5220" y="3608">
+   </LINKPOINT>
+   <LINKPOINT x="4965" y="3608">
+   </LINKPOINT>
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="12" systemname="IOBox (String)">
    <BOUNDS type="Box" left="5265" top="3630" width="450" height="240">
@@ -367,9 +373,9 @@
    <LINK srcnodeid="3" srcpinname="Error Text" dstnodeid="21" dstpinname="Input String">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="4515" top="5985" width="480" height="480">
+   <BOUNDS type="Box" left="3750" top="5760" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="4515" top="5985" width="0" height="0">
+   <BOUNDS type="Node" left="3750" top="5760" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -519,5 +525,25 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="45" dstpinname="Update">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="48" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4620" top="3915" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4620" top="3915" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="48" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Popup">
    </LINK>
    </PATCH>
