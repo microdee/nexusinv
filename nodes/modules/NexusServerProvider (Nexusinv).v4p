@@ -13,6 +13,8 @@
    </PIN>
    <PIN pinname="Content" visible="1">
    </PIN>
+   <PIN pinname="Port" slicecount="1" values="23456">
+   </PIN>
    </NODE>
    <NODE systemname="Reader (String)" filename="%VVVV%\lib\nodes\modules\String\Reader (String).v4p" nodename="Reader (String)" componentmode="Hidden" id="2">
    <BOUNDS type="Node" left="2115" top="1830" width="100" height="100">
@@ -47,7 +49,7 @@
    </BOUNDS>
    <PIN pinname="Bang" visible="1">
    </PIN>
-   <PIN pinname="Simulate" slicecount="1" values="0" visible="1">
+   <PIN pinname="Simulate" slicecount="1" visible="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="10" srcpinname="Bang" dstnodeid="2" dstpinname="Read">
