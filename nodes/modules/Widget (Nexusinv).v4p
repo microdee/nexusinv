@@ -1,43 +1,11 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.104.dtd" >
-   <PATCH nodename="C:\vvvv\app\vvvv_50alpha34.104_x64\packs\nexusinv\nodes\modules\Widget (Nexusinv).v4p" systemname="Widget (Nexusinv)" filename="C:\vvvv\libs\md.ecosystem\packs\nexusinv\nodes\modules\Widget (Nexusinv).v4p" scrollx="60" scrolly="0" locked="0">
-   <BOUNDS type="Window" left="5160" top="3030" width="16665" height="12135">
+<!DOCTYPE PATCH  SYSTEM "https://vvvv.org/versions/vvvv50alpha34.106.dtd" >
+   <PATCH nodename="C:\vvvv\app\vvvv-vpm\packs\nexusinv\nodes\modules\Widget (Nexusinv).v4p" systemname="Widget (Nexusinv)" filename="C:\vvvv\libs\md.ecosystem\packs\nexusinv\nodes\modules\Widget (Nexusinv).v4p" scrollx="7680" scrolly="0" locked="0">
+   <BOUNDS type="Window" left="12660" top="1260" width="9000" height="9960">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
    <PACK Name="addonpack" Version="34.101.0">
    </PACK>
-   <NODE systemname="Create (Message.Keep Formular)" filename="%VVVV%\packs\vvvv-Message\nodes\plugins\VVVV.Nodes.Messaging.dll" nodename="Create (Message.Keep Formular)" componentmode="Hidden" id="0">
-   <BOUNDS type="Node" left="2475" top="10110" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Count" visible="1">
-   </PIN>
-   <PIN pinname="Configuration" slicecount="1" values="|string Creation, bool Create, string Modification, bool Modify, string nxWName, Message Value|">
-   </PIN>
-   <BOUNDS type="Window" left="6750" top="1035" width="6000" height="5835">
-   </BOUNDS>
-   <PIN pinname="AutoSense" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="nxWName" visible="1">
-   </PIN>
-   <PIN pinname="Create" visible="1">
-   </PIN>
-   <PIN pinname="Creation" visible="1" slicecount="1" values="|function createvSlider_771347_0() {&cr;&lf;  $(&quot;body&quot;).append(&apos;&lt;div id=&quot;dvSlider_771347_0&quot;&gt;&lt;/div&gt;&apos;);&cr;&lf;  nx.add(&quot;slider&quot;, {&cr;&lf;    name: &quot;vSlider_771347_0&quot;,&cr;&lf;    parent: &quot;dvSlider_771347_0&quot;,&cr;&lf;    w: 40,&cr;&lf;    h: 200&cr;&lf;  });&cr;&lf;  $(&quot;#dvSlider_771347_0&quot;).css({&cr;&lf;    position: &quot;fixed&quot;,&cr;&lf;    top: 100,&cr;&lf;    left: 200&cr;&lf;  });&cr;&lf;  $(&quot;canvas:not(.nx)&quot;).remove();&cr;&lf;  &cr;&lf;  //colorscript//&cr;&lf;  vSlider_771347_0.sendsTo(function(data) {&cr;&lf;    vvvv.vvSlider_771347_0(&quot;vSlider_771347_0: &quot; + JSON.stringify(data));&cr;&lf;  });&cr;&lf;}&cr;&lf;createvSlider_771347_0();&cr;&lf;|">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Modification Bin Size" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Modify Bin Size" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Modification" visible="1" slicecount="1" values="|vSlider_771347_0.set({value: 0.7900}, true);|">
-   </PIN>
-   <PIN pinname="Modify" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Value" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Update" slicecount="1" values="1">
-   </PIN>
-   </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="12120" top="5385" width="795" height="240">
    </BOUNDS>
@@ -56,8 +24,6 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Count">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="2" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="4755" top="9645" width="285" height="240">
    </BOUNDS>
@@ -74,8 +40,6 @@
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
    </NODE>
-   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="0" dstpinname="AutoSense">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
    <BOUNDS type="Box" left="4185" top="1860" width="795" height="240">
    </BOUNDS>
@@ -94,8 +58,6 @@
    <PIN pinname="Output String" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="0" dstpinname="nxWName">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="4" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Box" left="3255" top="1980" width="480" height="480">
    </BOUNDS>
@@ -114,8 +76,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="Create">
    </PIN>
    </NODE>
-   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Create">
-   </LINK>
    <NODE systemname="Reader (String)" filename="%VVVV%\lib\nodes\modules\String\Reader (String).v4p" nodename="Reader (String)" componentmode="Hidden" id="5">
    <BOUNDS type="Node" left="1260" top="2235" width="100" height="100">
    </BOUNDS>
@@ -350,8 +310,6 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="nxWidget">
    </PIN>
    </NODE>
-   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="21" dstpinname="Input Node">
-   </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="23" systemname="IOBox (String)">
    <BOUNDS type="Box" left="8520" top="1305" width="795" height="240">
    </BOUNDS>
@@ -680,16 +638,6 @@
    </NODE>
    <LINK srcnodeid="51" srcpinname="Y Output Value" dstnodeid="38" dstpinname="Input 1 Bin Size">
    </LINK>
-   <LINK srcnodeid="48" srcpinname="Output" dstnodeid="0" dstpinname="Modification Bin Size">
-   </LINK>
-   <LINK srcnodeid="48" srcpinname="Output" dstnodeid="0" dstpinname="Modify Bin Size">
-   </LINK>
-   <LINK srcnodeid="37" srcpinname="Output" dstnodeid="0" dstpinname="Modification">
-   </LINK>
-   <LINK srcnodeid="38" srcpinname="Output" dstnodeid="0" dstpinname="Modify">
-   </LINK>
-   <LINK srcnodeid="12" srcpinname="Output" dstnodeid="0" dstpinname="Creation">
-   </LINK>
    <NODE systemname="Reader (String)" filename="%VVVV%\lib\nodes\modules\String\Reader (String).v4p" nodename="Reader (String)" componentmode="Hidden" id="56">
    <BOUNDS type="Node" left="4035" top="5610" width="100" height="100">
    </BOUNDS>
@@ -836,38 +784,6 @@
    <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
-   <NODE id="62" systemname="Create (Message.Keep Formular)" filename="%VVVV%\packs\vvvv-Message\nodes\plugins\VVVV.Nodes.Messaging.dll" nodename="Create (Message.Keep Formular)" componentmode="Hidden">
-   <BOUNDS type="Node" left="7905" top="9900" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Count" visible="1" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Configuration" slicecount="1" values="|string Value|">
-   </PIN>
-   <PIN pinname="AutoSense" slicecount="1" visible="1" values="0">
-   </PIN>
-   <PIN pinname="Update" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <BOUNDS type="Window" left="0" top="0" width="6000" height="6030">
-   </BOUNDS>
-   <PIN pinname="value" visible="1" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="64" srcpinname="Output String" dstnodeid="62" dstpinname="Value">
-   </LINK>
-   <LINK srcnodeid="65" srcpinname="Bang" dstnodeid="62" dstpinname="Update">
-   </LINK>
-   <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="62" dstpinname="AutoSense">
-   </LINK>
-   <LINK srcnodeid="62" srcpinname="Output" dstnodeid="0" dstpinname="Value">
-   </LINK>
-   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="62" dstpinname="Count">
-   </LINK>
-   <LINK srcnodeid="62" srcpinname="Output" dstnodeid="35" dstpinname="Input Node">
-   </LINK>
    <NODE systemname="FormatValue (String)" nodename="FormatValue (String)" componentmode="Hidden" id="66">
    <BOUNDS type="Node" left="6165" top="3555" width="100" height="100">
    </BOUNDS>
@@ -942,4 +858,90 @@
    </LINK>
    <LINK srcnodeid="71" srcpinname="Output" dstnodeid="38" dstpinname="Input 1">
    </LINK>
+   <NODE systemname="ConfigKeep (Message Formular)" filename="%VVVV%\packs\vvvv-Message\nodes\plugins\VVVV.Nodes.Messaging.dll" nodename="ConfigKeep (Message Formular)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="2475" top="10110" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   <PIN pinname="Configuration" slicecount="1" values="|string Creation, bool Create, string Modification, bool Modify, string nxWName, Message Value|">
+   </PIN>
+   <BOUNDS type="Window" left="6750" top="1035" width="6000" height="5835">
+   </BOUNDS>
+   <PIN pinname="AutoSense" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="nxWName" visible="1">
+   </PIN>
+   <PIN pinname="Create" visible="1">
+   </PIN>
+   <PIN pinname="Creation" visible="1" slicecount="1" values="|function createvSlider_771347_0() {&cr;&lf;  $(&quot;body&quot;).append(&apos;&lt;div id=&quot;dvSlider_771347_0&quot;&gt;&lt;/div&gt;&apos;);&cr;&lf;  nx.add(&quot;slider&quot;, {&cr;&lf;    name: &quot;vSlider_771347_0&quot;,&cr;&lf;    parent: &quot;dvSlider_771347_0&quot;,&cr;&lf;    w: 40,&cr;&lf;    h: 200&cr;&lf;  });&cr;&lf;  $(&quot;#dvSlider_771347_0&quot;).css({&cr;&lf;    position: &quot;fixed&quot;,&cr;&lf;    top: 100,&cr;&lf;    left: 200&cr;&lf;  });&cr;&lf;  $(&quot;canvas:not(.nx)&quot;).remove();&cr;&lf;  &cr;&lf;  //colorscript//&cr;&lf;  vSlider_771347_0.sendsTo(function(data) {&cr;&lf;    vvvv.vvSlider_771347_0(&quot;vSlider_771347_0: &quot; + JSON.stringify(data));&cr;&lf;  });&cr;&lf;}&cr;&lf;createvSlider_771347_0();&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Modification Bin Size" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Modify Bin Size" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Modification" visible="1" slicecount="1" values="|vSlider_771347_0.set({value: 0.7900}, true);|">
+   </PIN>
+   <PIN pinname="Modify" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Value" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Update" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Count">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="0" dstpinname="AutoSense">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Output String" dstnodeid="0" dstpinname="nxWName">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Create">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output" dstnodeid="21" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="48" srcpinname="Output" dstnodeid="0" dstpinname="Modification Bin Size">
+   </LINK>
+   <LINK srcnodeid="48" srcpinname="Output" dstnodeid="0" dstpinname="Modify Bin Size">
+   </LINK>
+   <LINK srcnodeid="37" srcpinname="Output" dstnodeid="0" dstpinname="Modification">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Output" dstnodeid="0" dstpinname="Modify">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="Output" dstnodeid="0" dstpinname="Creation">
+   </LINK>
+   <NODE id="62" systemname="ConfigKeep (Message Formular)" filename="%VVVV%\packs\vvvv-Message\nodes\plugins\VVVV.Nodes.Messaging.dll" nodename="ConfigKeep (Message Formular)" componentmode="Hidden">
+   <BOUNDS type="Node" left="7905" top="9900" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Count" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Configuration" slicecount="1" values="|string Value|">
+   </PIN>
+   <PIN pinname="AutoSense" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Update" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="6030">
+   </BOUNDS>
+   <PIN pinname="value" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="64" srcpinname="Output String" dstnodeid="62" dstpinname="Value">
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="Bang" dstnodeid="62" dstpinname="Update">
+   </LINK>
+   <LINK srcnodeid="63" srcpinname="Y Output Value" dstnodeid="62" dstpinname="AutoSense">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Y Output Value" dstnodeid="62" dstpinname="Count">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Output" dstnodeid="35" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Output" dstnodeid="0" dstpinname="Value">
+   </LINK>
+   <PACK Name="vvvv-Message" Version="2.7">
+   </PACK>
    </PATCH>

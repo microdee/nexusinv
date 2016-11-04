@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.104.dtd" >
-   <PATCH nodename="C:\vvvv\app\vvvv_50alpha34.104_x64\packs\nexusinv\nodes\modules\Dispatcher (Nexusinv).v4p" systemname="Dispatcher (Nexusinv)" filename="C:\vvvv\libs\md.ecosystem\packs\nexusinv\nodes\modules\Dispatcher (Nexusinv).v4p" scrollx="0" scrolly="945">
+<!DOCTYPE PATCH  SYSTEM "https://vvvv.org/versions/vvvv50alpha34.106.dtd" >
+   <PATCH nodename="C:\vvvv\app\vvvv-vpm\packs\nexusinv\nodes\modules\Dispatcher (Nexusinv).v4p" systemname="Dispatcher (Nexusinv)" filename="C:\vvvv\libs\md.ecosystem\packs\nexusinv\nodes\modules\Dispatcher (Nexusinv).v4p" scrollx="0" scrolly="945">
    <BOUNDS type="Window" left="15765" top="6285" width="9000" height="6000">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
@@ -374,4 +374,6 @@
    </LINK>
    <LINK srcnodeid="37" srcpinname="Output" dstnodeid="18" dstpinname="Input 2">
    </LINK>
+   <PACK Name="vvvv-Message" Version="2.7">
+   </PACK>
    </PATCH>

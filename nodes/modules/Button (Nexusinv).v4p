@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha34.104.dtd" >
-   <PATCH nodename="C:\vvvv\app\vvvv_50alpha34.104_x64\packs\nexusinv\nodes\modules\Button (Nexusinv).v4p" systemname="Button (Nexusinv)" filename="C:\vvvv\libs\md.ecosystem\packs\nexusinv\nodes\modules\Button (Nexusinv).v4p" scrollx="1770" scrolly="5355">
+<!DOCTYPE PATCH  SYSTEM "https://vvvv.org/versions/vvvv50alpha34.106.dtd" >
+   <PATCH nodename="C:\vvvv\app\vvvv-vpm\packs\nexusinv\nodes\modules\Button (Nexusinv).v4p" systemname="Button (Nexusinv)" filename="C:\vvvv\libs\md.ecosystem\packs\nexusinv\nodes\modules\Button (Nexusinv).v4p" scrollx="1155" scrolly="4980">
    <BOUNDS type="Window" left="8115" top="2880" width="9195" height="9225">
    </BOUNDS>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
@@ -403,7 +403,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1" top="826" width="250" height="250">
    </BOUNDS>
-   <PIN pinname="Value" visible="1">
+   <PIN pinname="Value" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Z Index" visible="1">
    </PIN>
@@ -527,7 +527,7 @@
    </PIN>
    <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Switch (Color Input)" nodename="Switch (Color Input)" componentmode="Hidden" id="59">
@@ -585,6 +585,8 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
+   <PIN pinname="Reset" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="62" srcpinname="Output" dstnodeid="61" dstpinname="Input 2">
    </LINK>
@@ -605,5 +607,27 @@
    <LINK srcnodeid="32" srcpinname="Output" dstnodeid="63" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="63" srcpinname="Up Edge" dstnodeid="62" dstpinname="Input">
+   </LINK>
+   <PACK Name="vvvv-Message" Version="2.7">
+   </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="64">
+   <BOUNDS type="Box" left="9000" top="3720" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9000" top="3720" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Reset Toggle|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="64" srcpinname="Y Output Value" dstnodeid="62" dstpinname="Reset">
    </LINK>
    </PATCH>
