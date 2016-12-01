@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "https://vvvv.org/versions/vvvv50alpha34.106.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50debug34.100.dtd" >
    <PATCH nodename="C:\vvvv\app\vvvv-vpm\packs\nexusinv\nodes\modules\Renderer (Nexusinv).v4p" systemname="Renderer (Nexusinv)" filename="C:\vvvv\libs\md.ecosystem\packs\nexusinv\nodes\modules\Renderer (Nexusinv).v4p" scrollx="0" scrolly="0">
    <BOUNDS type="Window" left="1170" top="4650" width="11490" height="9975">
    </BOUNDS>

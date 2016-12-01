@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "https://vvvv.org/versions/vvvv50alpha34.106.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50debug34.100.dtd" >
    <PATCH nodename="C:\vvvv\app\vvvv-vpm\packs\nexusinv\nodes\modules\Dispatcher (Nexusinv).v4p" systemname="Dispatcher (Nexusinv)" filename="C:\vvvv\libs\md.ecosystem\packs\nexusinv\nodes\modules\Dispatcher (Nexusinv).v4p" scrollx="0" scrolly="945">
    <BOUNDS type="Window" left="15765" top="6285" width="9000" height="6000">
    </BOUNDS>

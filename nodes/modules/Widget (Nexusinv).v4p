@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "https://vvvv.org/versions/vvvv50alpha34.106.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50debug34.100.dtd" >
    <PATCH nodename="C:\vvvv\app\vvvv-vpm\packs\nexusinv\nodes\modules\Widget (Nexusinv).v4p" systemname="Widget (Nexusinv)" filename="C:\vvvv\libs\md.ecosystem\packs\nexusinv\nodes\modules\Widget (Nexusinv).v4p" scrollx="7680" scrolly="0" locked="0">
    <BOUNDS type="Window" left="12660" top="1260" width="9000" height="9960">
    </BOUNDS>
